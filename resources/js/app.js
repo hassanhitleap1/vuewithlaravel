@@ -15,6 +15,8 @@ import HomeComponent from './components/HomeComponent.vue';
 import CreateComponent from './components/CreateComponent.vue';
 import IndexComponent from './components/IndexComponent.vue';
 import EditComponent from './components/EditComponent.vue';
+import LoginComponent from './components/LoginComponent.vue';
+import RegisterComponent from './components/RegisterComponent.vue';
 
 const routes = [
   {
@@ -36,7 +38,17 @@ const routes = [
       name: 'edit',
       path: '/edit/:id',
       component: EditComponent
-  }
+  },
+  {
+    name: 'login',
+    path: '/login',
+    component: LoginComponent
+},
+{
+    name: 'register',
+    path: '/register',
+    component: RegisterComponent
+},
 ];
 
 const router = new VueRouter({ mode: 'history', routes: routes});

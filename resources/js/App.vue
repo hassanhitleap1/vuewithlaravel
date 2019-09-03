@@ -11,6 +11,12 @@
         <li class="nav-item">
           <router-link to="/posts" class="nav-link">Posts</router-link>
         </li>
+         <li class="nav-item">
+          <router-link to="/login" class="nav-link">Login</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/register" class="nav-link">register</router-link>
+        </li>
       </ul>
     </nav><br />
     <transition name="fade">
@@ -30,5 +36,8 @@
 
 <script>
     export default{
+       mounted() {
+            console.log('APP mounted.')
+        }
     }
 </script>
